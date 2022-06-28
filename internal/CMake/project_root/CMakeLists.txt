@@ -11,7 +11,7 @@ list(APPEND EXTRA_LINK_LIBS)
 set(TEENSY_VERSION $ENV{TEENSY_VERSION})
 
 #CPP and C Flags
-set(CXXFLAGS " -Wall -g -mthumb -MMD -I. -DUSB_SERIAL -DLAYOUT_US_ENGLISH")
+set(CXXFLAGS " -Wall -g -mthumb -MMD -ffunction-sections -fdata-sections -I. -DUSB_SERIAL -DLAYOUT_US_ENGLISH")
 
 #CPP only
 set(CPPFLAGS "-fexceptions")
